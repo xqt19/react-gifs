@@ -9,12 +9,23 @@ class App extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      selectedGif: {id: ''},
+      selectedGif: '',
       gifs: [
-        {id: "gZEBpuOkPuydi"},
-        {id: "3oEdvb40HNvDWNmbyU"},
-        {id: "11D9WQ4TYDqrIc"},
-        {id: "xT1XGxMBRTedbb5pSw"}
+        // {id: "gZEBpuOkPuydi"},
+        // {id: "3oEdvb40HNvDWNmbyU"},
+        // {id: "11D9WQ4TYDqrIc"},
+        // {id: "xT1XGxMBRTedbb5pSw"}
+
+        {id: "Zk9mW5OmXTz9e"},
+        {id: "xT5LMuRbEiz9ZuhMME"},
+        {id: "kvYxRi5OIwZbZ4R5ji"},
+        {id: "3o7TKVUn7iM8FMEU24"},
+        {id: "12rTjvF0ANQJsk"},
+        {id: "fdHg7T902uzLy"},
+        {id: "RqbkeCZGgipSo"},
+        {id: "dSBCzU9g1WKUU"},
+        {id: "vjGyYSsF765wc"},
+        {id: "NE0PYCUVbswo0"}
       ]
     }
   }
@@ -25,7 +36,7 @@ class App extends React.Component{
       let src = e.target.src
       let id = (myRe.exec(src)[1])
       this.setState({
-        selectedGif: {id}
+        selectedGif: id
       })
     }
   }
@@ -48,7 +59,7 @@ class App extends React.Component{
         <div className="left-scene">
           <SearchBar search={this.search}/>
           <div className="selected-gif">
-            {(this.state.selectedGif.id !== '') && <Gif id={this.state.selectedGif.id} />}
+            {(this.state.selectedGif !== '') && <Gif id={this.state.selectedGif} />}
           </div>
         </div>
         <div className="right-scene" onClick={this.handleClick}>
