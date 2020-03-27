@@ -42,7 +42,7 @@ class App extends React.Component{
   }
 
   search = (query) => {
-    let url = `https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=${query}&limit=10&offset=0&rating=G&lang=en`
+    let url = `https://api.giphy.com/v1/gifs/search?api_key=wt5FB0la45lAB3kr5H0Yy75o4w994OGb&q=${query}&limit=10&offset=0&rating=G&lang=en`
     // giphy('dc6zaTOxFJmzC').search({
     //   q:query,
     //   rating: 'g',
@@ -58,7 +58,7 @@ class App extends React.Component{
         return response.json()
       })
       .then(response =>{
-        console.log(response)
+        // console.log(response)
         this.setState({
             gifs: response.data
         })
@@ -84,5 +84,5 @@ class App extends React.Component{
 
 export default App;
 
-
+//dc6zaTOxFJmzC
 //wt5FB0la45lAB3kr5H0Yy75o4w994OGb
