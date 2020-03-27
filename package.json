@@ -37,8 +37,6 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "lint": "eslint './src/**/*.js*'",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master -d build"
-    // "deploy": "webpack -p && gh-pages -d dist"
+    "deploy": "webpack -p && gh-pages -d dist"
   }
 }
