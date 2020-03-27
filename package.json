@@ -1,4 +1,4 @@
-{ "homepage": "http://xqt19.github.io/react-gifs",
+{ 
   "license": "UNLICENSED",
   "devDependencies": {
     "@babel/cli": "^7.1.5",
@@ -26,6 +26,7 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.11"
   },
+  "homepage": "http://xqt19.github.io/react-gifs",
   "dependencies": {
     "@giphy/js-fetch-api": "^1.5.0",
     "@giphy/react-components": "^0.5.1",
@@ -37,6 +38,7 @@
     "start": "webpack-dev-server --mode development",
     "lint": "eslint './src/**/*.js*'",
     "predeploy": "yarn run build",
-    "deploy": "webpack -p && gh-pages -d dist"
+    "deploy": "gh-pages -b master -d build"
+    // "deploy": "webpack -p && gh-pages -d dist"
   }
 }
