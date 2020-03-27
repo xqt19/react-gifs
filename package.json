@@ -1,4 +1,4 @@
-{
+{ "homepage": "http://xqt19.github.io/react-gifs",
   "license": "UNLICENSED",
   "devDependencies": {
     "@babel/cli": "^7.1.5",
@@ -36,6 +36,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "lint": "eslint './src/**/*.js*'",
+    "predeploy": "yarn run build",
     "deploy": "webpack -p && gh-pages -d dist"
   }
 }
