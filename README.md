@@ -1,4 +1,14 @@
-# react-boilerplate
+## Giphy Search App - Using React!
+
+Welcome! This simple web application will allow you to quickly and easily browse millions of publicly available gifs courtesy of the Giphy API 😉 Just start typing in the searchbar and relevant search results will be instantly delivered to you thanks to the magic of JavaScript and AJAX!
+Lets get GIFing! 💬
+
+
+### See More
+
+Spot a gif you like? Click on it to see it in a bigger resolution on the center of the page!
+
+<!-- # react-boilerplate
 
 Simple react starter with the following config:
 
@@ -27,4 +37,4 @@ To build and deploy your app to `gh-pages` branch on the GitHub repo:
 
 ```bash
 yarn deploy
-```
+``` -->
